@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="heading">
+          <i class="fas fa-coins"></i> CURRENCY
+          <span id="converter">CONVERTER</span>
+        </h1>
+      </header>
+      <div class="wrapper">
+        <div class="select">
+          <div class="currency-group">
+            <label for="from-inputs">Convert From</label>
+            <select id="from-inputs"></select>
+          </div>
+          <div class="exchange-icon">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <div class="currency-group">
+            <label for="to-inputs">Convert To</label>
+            <select id="to-inputs"></select>
+          </div>
+        </div>
+
+        <div class="input-div">
+          <label for="input-container">Amount</label>
+          <input
+            id="input-container"
+            class="input"
+            type="number"
+            placeholder="Enter Amount"
+            min="0"
+          />
+        </div>
+
+        <button id="submit-btn" class="convert-button" type="button">
+          <i class="fas fa-sync-alt"></i> CONVERT
+        </button>
+
+        <div class="result">
+          <div class="result-container">
+            <p class="result-label">Converted Amount:</p>
+            <h2 class="result-amt"></h2>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; 2025 Currency Converter</p>
+      </footer>
+    </div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
